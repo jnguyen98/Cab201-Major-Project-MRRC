@@ -1,0 +1,14 @@
+Registration,Grade,Make,Model,Year,NumSeats,Transmission,Fuel,GPS,SunRoof,DailyRate,Colour
+851VOJ,Economy,Pontiac,Fiero 2M4,1985,2,Manual,Petrol,False,False,37.1,Black
+169FBE,Economy,Pontiac,Fiero 2M4,1985,2,Manual,Petrol,False,False,48.8,Black
+602VVZ,Economy,Pontiac,Fiero 2M4,1987,2,Manual,Petrol,False,False,37.9,Red
+993QAN,Commercial,Mitsubishi,3000 GT VR-4,1991,2,Manual,Petrol,False,False,37.8,Red
+509XRK,Commercial,Dodge,Dakota,2002,4,Manual,Diesel,True,False,45.5,Blue
+471XBI,Luxury,Chevrolet,Tahoe,1996,8,Automatic,Petrol,True,True,38,Black
+682GWJ,Commercial,Audi,A4,1997,5,Manual,Petrol,False,False,46.1,Blue
+677UIA,Economy,Audi,S4,2004,5,Manual,Petrol,False,False,43.3,Blue
+519YUY,Family,Dodge,Durango,2006,7,Automatic,Diesel,True,True,46.8,Blue
+000FCB,Family,Toyota,Camry,2010,4,Manual,Petrol,False,False,50,Black
+101XCB,Economy,Toyota,Prius,2015,4,Automatic,Petrol,False,False,50,Black
+101OAB,Economy,Toyota,Camry,2010,4,Automatic,Petrol,False,False,50,Black
+101AAA,Economy,Tyoyta,Camry,2015,4,Automatic,Petrol,False,False,50,Black

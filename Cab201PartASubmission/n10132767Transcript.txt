@@ -1,0 +1,564 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20200422002345
+Username: QUTAD\n10132767
+RunAs User: QUTAD\n10132767
+Configuration Name: 
+Machine: VDI-VL04-008 (Microsoft Windows NT 10.0.18363.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 9504
+PSVersion: 5.1.18362.752
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.18362.752
+BuildVersion: 10.0.18362.752
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is n10132767Transcript.txt
+PS C:\Users\n10132767\Desktop\Cab201PartASubmission\MRRC\MRRC\bin\Debug> ./MRRC
+
+
+
+### Mates-Rates Rent-a-Car Operation Menu ###
+
+You may press the ESC key at any menu to exit. Press the BACKSPACE key to return
+to the previous menu. Press the Q key to return to the parent menu.
+Press the H key to return home to the main menu.
+
+Please enter a character from the options below:
+
+a) Customer Management
+b) Fleet Management
+c) Rental Managementa
+
+
+### Customer Management Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Customers
+b) New Customer
+c) Modify Customer
+d) Delete Customera
+
+
+### Table and Border Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Customer Table with ExtendedASCII border
+b) Display Customer Table with ASCII border
+c) Display Customer Table with Clear border
+
+a
+┌────┬───────┬───────────┬─────────────┬────────┬────────────┐
+│ ID │ Title │ FirstName │ LastName    │ Gender │ DOB        │
+├────┼───────┼───────────┼─────────────┼────────┼────────────┤
+│ 0  │ Ms    │ Elizabeth │ Franklin    │ Female │ 26/09/1995 │
+│ 1  │ Miss  │ Finley    │ Sartini     │ Male   │ 25/04/1965 │
+│ 2  │ Mr    │ Miron     │ Descoteaux  │ Male   │ 4/06/1983  │
+│ 3  │ Mx    │ Tekla     │ Muhammad    │ Other  │ 17/12/1989 │
+│ 4  │ Mrs   │ Valentina │ Waters      │ Female │ 27/04/1979 │
+│ 5  │ Mr    │ Azarel    │ Kristiansen │ Male   │ 1/06/1976  │
+│ 6  │ Lord  │ Herman    │ Dirksen     │ Male   │ 22/05/1959 │
+│ 7  │ Mrs   │ Emel      │ Gabor       │ Female │ 31/03/1976 │
+│ 8  │ Lady  │ Kalpana   │ Rothenberg  │ Female │ 6/02/1966  │
+│ 9  │ Dr    │ Amos      │ Allaway     │ Male   │ 10/09/1957 │
+└────┴───────┴───────────┴─────────────┴────────┴────────────┘
+
+q
+
+
+### Customer Management Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Customers
+b) New Customer
+c) Modify Customer
+d) Delete Customerb
+
+
+### New Customer Submenu ###
+
+Please fill the following fields (fields with * are required)
+
+Title*: lord
+FirstName*: jesus
+LastName*: christ
+Gender*: other
+DOB*: 01/01/2000
+
+Successfully created new customer '10 - Lord Jesus Christ' and added to customer listq
+
+
+### Customer Management Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Customers
+b) New Customer
+c) Modify Customer
+d) Delete Customera
+
+
+### Table and Border Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Customer Table with ExtendedASCII border
+b) Display Customer Table with ASCII border
+c) Display Customer Table with Clear border
+
+a
+┌────┬───────┬───────────┬─────────────┬────────┬────────────┐
+│ ID │ Title │ FirstName │ LastName    │ Gender │ DOB        │
+├────┼───────┼───────────┼─────────────┼────────┼────────────┤
+│ 0  │ Ms    │ Elizabeth │ Franklin    │ Female │ 26/09/1995 │
+│ 1  │ Miss  │ Finley    │ Sartini     │ Male   │ 25/04/1965 │
+│ 2  │ Mr    │ Miron     │ Descoteaux  │ Male   │ 4/06/1983  │
+│ 3  │ Mx    │ Tekla     │ Muhammad    │ Other  │ 17/12/1989 │
+│ 4  │ Mrs   │ Valentina │ Waters      │ Female │ 27/04/1979 │
+│ 5  │ Mr    │ Azarel    │ Kristiansen │ Male   │ 1/06/1976  │
+│ 6  │ Lord  │ Herman    │ Dirksen     │ Male   │ 22/05/1959 │
+│ 7  │ Mrs   │ Emel      │ Gabor       │ Female │ 31/03/1976 │
+│ 8  │ Lady  │ Kalpana   │ Rothenberg  │ Female │ 6/02/1966  │
+│ 9  │ Dr    │ Amos      │ Allaway     │ Male   │ 10/09/1957 │
+│ 10 │ Lord  │ Jesus     │ Christ      │ Other  │ 1/01/2000  │
+└────┴───────┴───────────┴─────────────┴────────┴────────────┘
+
+q
+
+
+### Customer Management Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Customers
+b) New Customer
+c) Modify Customer
+d) Delete Customerc
+
+
+### Modify Customer Submenu ###
+
+Please enter the customer ID of the customer to be modified: 10
+
+Title*: mr
+FirstName*: john
+LastName*: nguyen
+Gender*: male
+DOB*: 22/04/1998
+
+Successfully modified customer '10 - Lord Jesus Christ' to 'Mr John Nguyen' within the customers listq
+
+
+### Customer Management Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Customers
+b) New Customer
+c) Modify Customer
+d) Delete Customera
+
+
+### Table and Border Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Customer Table with ExtendedASCII border
+b) Display Customer Table with ASCII border
+c) Display Customer Table with Clear border
+
+a
+┌────┬───────┬───────────┬─────────────┬────────┬────────────┐
+│ ID │ Title │ FirstName │ LastName    │ Gender │ DOB        │
+├────┼───────┼───────────┼─────────────┼────────┼────────────┤
+│ 0  │ Ms    │ Elizabeth │ Franklin    │ Female │ 26/09/1995 │
+│ 1  │ Miss  │ Finley    │ Sartini     │ Male   │ 25/04/1965 │
+│ 2  │ Mr    │ Miron     │ Descoteaux  │ Male   │ 4/06/1983  │
+│ 3  │ Mx    │ Tekla     │ Muhammad    │ Other  │ 17/12/1989 │
+│ 4  │ Mrs   │ Valentina │ Waters      │ Female │ 27/04/1979 │
+│ 5  │ Mr    │ Azarel    │ Kristiansen │ Male   │ 1/06/1976  │
+│ 6  │ Lord  │ Herman    │ Dirksen     │ Male   │ 22/05/1959 │
+│ 7  │ Mrs   │ Emel      │ Gabor       │ Female │ 31/03/1976 │
+│ 8  │ Lady  │ Kalpana   │ Rothenberg  │ Female │ 6/02/1966  │
+│ 9  │ Dr    │ Amos      │ Allaway     │ Male   │ 10/09/1957 │
+│ 10 │ Mr    │ John      │ Nguyen      │ Male   │ 22/04/1998 │
+└────┴───────┴───────────┴─────────────┴────────┴────────────┘
+
+q
+
+
+### Customer Management Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Customers
+b) New Customer
+c) Modify Customer
+d) Delete Customerd
+
+
+### Delete Customer Submenu ###
+
+Please enter the customer ID of the customer to be deleted: 10
+
+Successfully deleted the Customer with an ID of '10'
+q
+
+
+### Customer Management Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Customers
+b) New Customer
+c) Modify Customer
+d) Delete Customera
+
+
+### Table and Border Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Customer Table with ExtendedASCII border
+b) Display Customer Table with ASCII border
+c) Display Customer Table with Clear border
+
+a
+┌────┬───────┬───────────┬─────────────┬────────┬────────────┐
+│ ID │ Title │ FirstName │ LastName    │ Gender │ DOB        │
+├────┼───────┼───────────┼─────────────┼────────┼────────────┤
+│ 0  │ Ms    │ Elizabeth │ Franklin    │ Female │ 26/09/1995 │
+│ 1  │ Miss  │ Finley    │ Sartini     │ Male   │ 25/04/1965 │
+│ 2  │ Mr    │ Miron     │ Descoteaux  │ Male   │ 4/06/1983  │
+│ 3  │ Mx    │ Tekla     │ Muhammad    │ Other  │ 17/12/1989 │
+│ 4  │ Mrs   │ Valentina │ Waters      │ Female │ 27/04/1979 │
+│ 5  │ Mr    │ Azarel    │ Kristiansen │ Male   │ 1/06/1976  │
+│ 6  │ Lord  │ Herman    │ Dirksen     │ Male   │ 22/05/1959 │
+│ 7  │ Mrs   │ Emel      │ Gabor       │ Female │ 31/03/1976 │
+│ 8  │ Lady  │ Kalpana   │ Rothenberg  │ Female │ 6/02/1966  │
+│ 9  │ Dr    │ Amos      │ Allaway     │ Male   │ 10/09/1957 │
+└────┴───────┴───────────┴─────────────┴────────┴────────────┘
+
+q
+
+
+### Customer Management Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Customers
+b) New Customer
+c) Modify Customer
+d) Delete Customer
+
+
+### Mates-Rates Rent-a-Car Operation Menu ###
+
+You may press the ESC key at any menu to exit. Press the BACKSPACE key to return
+to the previous menu. Press the Q key to return to the parent menu.
+Press the H key to return home to the main menu.
+
+Please enter a character from the options below:
+
+a) Customer Management
+b) Fleet Management
+c) Rental Managementb
+
+
+### Fleet Management Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Fleet
+b) New Vehicle
+c) Modify Vehicle
+d) Delete Vehiclea
+
+
+### Table and Border Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Fleet Table with ExtendedASCII border
+b) Display Fleet Table with ASCII border
+c) Display Fleet Table with Clear border
+
+a
+┌──────────────┬────────────┬────────────┬──────────────┬──────┬──────────┬──────────────┬────────┬───────┬─────────┬───────────┬────────┐
+│ Registration │ Grade      │ Make       │ Model        │ Year │ NumSeats │ Transmission │ Fuel   │ GPS   │ SunRoof │ DailyRate │ Colour │
+├──────────────┼────────────┼────────────┼──────────────┼──────┼──────────┼──────────────┼────────┼───────┼─────────┼───────────┼────────┤
+│ 851VOJ       │ Economy    │ Pontiac    │ Fiero 2M4    │ 1985 │ 2        │ Manual       │ Petrol │ False │ False   │ 37.1      │ Black  │
+│ 169FBE       │ Economy    │ Pontiac    │ Fiero 2M4    │ 1985 │ 2        │ Manual       │ Petrol │ False │ False   │ 48.8      │ Black  │
+│ 602VVZ       │ Economy    │ Pontiac    │ Fiero 2M4    │ 1987 │ 2        │ Manual       │ Petrol │ False │ False   │ 37.9      │ Red    │
+│ 993QAN       │ Commercial │ Mitsubishi │ 3000 GT VR-4 │ 1991 │ 2        │ Manual       │ Petrol │ False │ False   │ 37.8      │ Red    │
+│ 509XRK       │ Commercial │ Dodge      │ Dakota       │ 2002 │ 4        │ Manual       │ Diesel │ True  │ False   │ 45.5      │ Blue   │
+│ 471XBI       │ Luxury     │ Chevrolet  │ Tahoe        │ 1996 │ 8        │ Automatic    │ Petrol │ True  │ True    │ 38        │ Black  │
+│ 682GWJ       │ Commercial │ Audi       │ A4           │ 1997 │ 5        │ Manual       │ Petrol │ False │ False   │ 46.1      │ Blue   │
+│ 677UIA       │ Economy    │ Audi       │ S4           │ 2004 │ 5        │ Manual       │ Petrol │ False │ False   │ 43.3      │ Blue   │
+│ 519YUY       │ Family     │ Dodge      │ Durango      │ 2006 │ 7        │ Automatic    │ Diesel │ True  │ True    │ 46.8      │ Blue   │
+└──────────────┴────────────┴────────────┴──────────────┴──────┴──────────┴──────────────┴────────┴───────┴─────────┴───────────┴────────┘
+
+q
+
+
+### Fleet Management Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Fleet
+b) New Vehicle
+c) Modify Vehicle
+d) Delete Vehicleb
+
+
+### New Vehicle Submenu ###
+
+Please enter a character from the options below:
+
+a) Standard
+b) Economy
+c) Family
+d) Luxury
+e) Commercial
+b
+
+
+### New Economy Vehicle Submenu ###
+
+Please enter a character from the options below:
+
+a) Default Economy Vehicle
+b) Full Economy Vehicle
+a
+
+
+### New Default Economy Vehicle Submenu ###
+
+Please fill the following fields (fields with * are required)
+
+Registration*: 102XCB
+Make*: Toyota
+Model*: camry
+Year*: 2010
+
+Successfully added new vehicle '102XCB -  Camry Toyota' and added to vehicle listq
+
+
+### Fleet Management Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Fleet
+b) New Vehicle
+c) Modify Vehicle
+d) Delete Vehiclea
+
+
+### Table and Border Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Fleet Table with ExtendedASCII border
+b) Display Fleet Table with ASCII border
+c) Display Fleet Table with Clear border
+
+a
+┌──────────────┬────────────┬────────────┬──────────────┬──────┬──────────┬──────────────┬────────┬───────┬─────────┬───────────┬────────┐
+│ Registration │ Grade      │ Make       │ Model        │ Year │ NumSeats │ Transmission │ Fuel   │ GPS   │ SunRoof │ DailyRate │ Colour │
+├──────────────┼────────────┼────────────┼──────────────┼──────┼──────────┼──────────────┼────────┼───────┼─────────┼───────────┼────────┤
+│ 851VOJ       │ Economy    │ Pontiac    │ Fiero 2M4    │ 1985 │ 2        │ Manual       │ Petrol │ False │ False   │ 37.1      │ Black  │
+│ 169FBE       │ Economy    │ Pontiac    │ Fiero 2M4    │ 1985 │ 2        │ Manual       │ Petrol │ False │ False   │ 48.8      │ Black  │
+│ 602VVZ       │ Economy    │ Pontiac    │ Fiero 2M4    │ 1987 │ 2        │ Manual       │ Petrol │ False │ False   │ 37.9      │ Red    │
+│ 993QAN       │ Commercial │ Mitsubishi │ 3000 GT VR-4 │ 1991 │ 2        │ Manual       │ Petrol │ False │ False   │ 37.8      │ Red    │
+│ 509XRK       │ Commercial │ Dodge      │ Dakota       │ 2002 │ 4        │ Manual       │ Diesel │ True  │ False   │ 45.5      │ Blue   │
+│ 471XBI       │ Luxury     │ Chevrolet  │ Tahoe        │ 1996 │ 8        │ Automatic    │ Petrol │ True  │ True    │ 38        │ Black  │
+│ 682GWJ       │ Commercial │ Audi       │ A4           │ 1997 │ 5        │ Manual       │ Petrol │ False │ False   │ 46.1      │ Blue   │
+│ 677UIA       │ Economy    │ Audi       │ S4           │ 2004 │ 5        │ Manual       │ Petrol │ False │ False   │ 43.3      │ Blue   │
+│ 519YUY       │ Family     │ Dodge      │ Durango      │ 2006 │ 7        │ Automatic    │ Diesel │ True  │ True    │ 46.8      │ Blue   │
+│ 102XCB       │ Economy    │ Toyota     │ Camry        │ 2010 │ 4        │ Automatic    │ Petrol │ False │ False   │ 50        │ black  │
+└──────────────┴────────────┴────────────┴──────────────┴──────┴──────────┴──────────────┴────────┴───────┴─────────┴───────────┴────────┘
+
+q
+
+
+### Fleet Management Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Fleet
+b) New Vehicle
+c) Modify Vehicle
+d) Delete Vehiclec
+
+
+### Modify Vehicle Submenu ###
+
+Please enter the registration of the vehicle to be modified: 102XCB
+
+Please enter a character from the options below:
+
+a) Modify Default Vehicle Fields
+b) Modify All Vehicle Fields
+b
+
+
+### Modify Full Vehicle Submenu ###
+
+Please fill the following fields to modify (fields with * are required)
+
+Registration*: 602VVZ
+
+Could not accept vehicle registration '602VVZ' as it already exists in the fleet list.
+
+Registration*: 293POB
+Grade*: Economy
+Make*: Ford
+Model*: falcon
+Year*: 2010
+NumSeats*: 4
+Transmission*: manual
+Fuel*: petrol
+GPS*: true
+SunRoof*: false
+DailyRate*: 45
+Colour*: silver
+
+Successfully modified vehicle '102XCB' to vehicle '293POB Ford Falcon 2010'q
+
+
+### Fleet Management Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Fleet
+b) New Vehicle
+c) Modify Vehicle
+d) Delete Vehiclea
+
+
+### Table and Border Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Fleet Table with ExtendedASCII border
+b) Display Fleet Table with ASCII border
+c) Display Fleet Table with Clear border
+
+a
+┌──────────────┬────────────┬────────────┬──────────────┬──────┬──────────┬──────────────┬────────┬───────┬─────────┬───────────┬────────┐
+│ Registration │ Grade      │ Make       │ Model        │ Year │ NumSeats │ Transmission │ Fuel   │ GPS   │ SunRoof │ DailyRate │ Colour │
+├──────────────┼────────────┼────────────┼──────────────┼──────┼──────────┼──────────────┼────────┼───────┼─────────┼───────────┼────────┤
+│ 851VOJ       │ Economy    │ Pontiac    │ Fiero 2M4    │ 1985 │ 2        │ Manual       │ Petrol │ False │ False   │ 37.1      │ Black  │
+│ 169FBE       │ Economy    │ Pontiac    │ Fiero 2M4    │ 1985 │ 2        │ Manual       │ Petrol │ False │ False   │ 48.8      │ Black  │
+│ 602VVZ       │ Economy    │ Pontiac    │ Fiero 2M4    │ 1987 │ 2        │ Manual       │ Petrol │ False │ False   │ 37.9      │ Red    │
+│ 993QAN       │ Commercial │ Mitsubishi │ 3000 GT VR-4 │ 1991 │ 2        │ Manual       │ Petrol │ False │ False   │ 37.8      │ Red    │
+│ 509XRK       │ Commercial │ Dodge      │ Dakota       │ 2002 │ 4        │ Manual       │ Diesel │ True  │ False   │ 45.5      │ Blue   │
+│ 471XBI       │ Luxury     │ Chevrolet  │ Tahoe        │ 1996 │ 8        │ Automatic    │ Petrol │ True  │ True    │ 38        │ Black  │
+│ 682GWJ       │ Commercial │ Audi       │ A4           │ 1997 │ 5        │ Manual       │ Petrol │ False │ False   │ 46.1      │ Blue   │
+│ 677UIA       │ Economy    │ Audi       │ S4           │ 2004 │ 5        │ Manual       │ Petrol │ False │ False   │ 43.3      │ Blue   │
+│ 519YUY       │ Family     │ Dodge      │ Durango      │ 2006 │ 7        │ Automatic    │ Diesel │ True  │ True    │ 46.8      │ Blue   │
+│ 293POB       │ Economy    │ Ford       │ Falcon       │ 2010 │ 4        │ Manual       │ Petrol │ True  │ False   │ 45        │ Silver │
+└──────────────┴────────────┴────────────┴──────────────┴──────┴──────────┴──────────────┴────────┴───────┴─────────┴───────────┴────────┘
+
+q
+
+
+### Fleet Management Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Fleet
+b) New Vehicle
+c) Modify Vehicle
+d) Delete Vehicled
+
+
+### Remove Vehicle Submenu ###
+
+Please enter the registration of the vehicle to be deleted: 602VVZ
+
+Deletion Unsuccessful. Vehicle '602VVZ' is still renting a vehicle
+
+
+
+### Remove Vehicle Submenu ###
+
+Please enter the registration of the vehicle to be deleted: 293POB
+
+Successfully deleted the Vehicle with the registration of '293POB'
+q
+
+
+### Fleet Management Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Fleet
+b) New Vehicle
+c) Modify Vehicle
+d) Delete Vehiclea
+
+
+### Table and Border Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Fleet Table with ExtendedASCII border
+b) Display Fleet Table with ASCII border
+c) Display Fleet Table with Clear border
+
+a
+┌──────────────┬────────────┬────────────┬──────────────┬──────┬──────────┬──────────────┬────────┬───────┬─────────┬───────────┬────────┐
+│ Registration │ Grade      │ Make       │ Model        │ Year │ NumSeats │ Transmission │ Fuel   │ GPS   │ SunRoof │ DailyRate │ Colour │
+├──────────────┼────────────┼────────────┼──────────────┼──────┼──────────┼──────────────┼────────┼───────┼─────────┼───────────┼────────┤
+│ 851VOJ       │ Economy    │ Pontiac    │ Fiero 2M4    │ 1985 │ 2        │ Manual       │ Petrol │ False │ False   │ 37.1      │ Black  │
+│ 169FBE       │ Economy    │ Pontiac    │ Fiero 2M4    │ 1985 │ 2        │ Manual       │ Petrol │ False │ False   │ 48.8      │ Black  │
+│ 602VVZ       │ Economy    │ Pontiac    │ Fiero 2M4    │ 1987 │ 2        │ Manual       │ Petrol │ False │ False   │ 37.9      │ Red    │
+│ 993QAN       │ Commercial │ Mitsubishi │ 3000 GT VR-4 │ 1991 │ 2        │ Manual       │ Petrol │ False │ False   │ 37.8      │ Red    │
+│ 509XRK       │ Commercial │ Dodge      │ Dakota       │ 2002 │ 4        │ Manual       │ Diesel │ True  │ False   │ 45.5      │ Blue   │
+│ 471XBI       │ Luxury     │ Chevrolet  │ Tahoe        │ 1996 │ 8        │ Automatic    │ Petrol │ True  │ True    │ 38        │ Black  │
+│ 682GWJ       │ Commercial │ Audi       │ A4           │ 1997 │ 5        │ Manual       │ Petrol │ False │ False   │ 46.1      │ Blue   │
+│ 677UIA       │ Economy    │ Audi       │ S4           │ 2004 │ 5        │ Manual       │ Petrol │ False │ False   │ 43.3      │ Blue   │
+│ 519YUY       │ Family     │ Dodge      │ Durango      │ 2006 │ 7        │ Automatic    │ Diesel │ True  │ True    │ 46.8      │ Blue   │
+└──────────────┴────────────┴────────────┴──────────────┴──────┴──────────┴──────────────┴────────┴───────┴─────────┴───────────┴────────┘
+
+q
+
+
+### Fleet Management Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Fleet
+b) New Vehicle
+c) Modify Vehicle
+d) Delete Vehicleh
+
+
+### Mates-Rates Rent-a-Car Operation Menu ###
+
+You may press the ESC key at any menu to exit. Press the BACKSPACE key to return
+to the previous menu. Press the Q key to return to the parent menu.
+Press the H key to return home to the main menu.
+
+Please enter a character from the options below:
+
+a) Customer Management
+b) Fleet Management
+c) Rental Management
+
+
+Program has quit. Thankyou for your time!
+Press any key to close program...
+
+PS C:\Users\n10132767\Desktop\Cab201PartASubmission\MRRC\MRRC\bin\Debug> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20200422002708
+**********************

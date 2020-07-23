@@ -1,0 +1,20 @@
+C:\Users\n10132767\source\repos\MRRC\MRRCManagement\bin\Debug\MRRCManagement.dll
+C:\Users\n10132767\source\repos\MRRC\MRRCManagement\bin\Debug\MRRCManagement.pdb
+C:\Users\n10132767\source\repos\MRRC\MRRCManagement\obj\Debug\MRRCManagement.csprojAssemblyReference.cache
+C:\Users\n10132767\source\repos\MRRC\MRRCManagement\obj\Debug\MRRCManagement.dll
+C:\Users\n10132767\source\repos\MRRC\MRRCManagement\obj\Debug\MRRCManagement.pdb
+C:\Users\n10132767\Desktop\Cab201PartASubmission\MRRC\MRRCManagement\bin\Debug\MRRCManagement.dll
+C:\Users\n10132767\Desktop\Cab201PartASubmission\MRRC\MRRCManagement\bin\Debug\MRRCManagement.pdb
+C:\Users\n10132767\Desktop\Cab201PartASubmission\MRRC\MRRCManagement\obj\Debug\MRRCManagement.csprojAssemblyReference.cache
+C:\Users\n10132767\Desktop\Cab201PartASubmission\MRRC\MRRCManagement\obj\Debug\MRRCManagement.dll
+C:\Users\n10132767\Desktop\Cab201PartASubmission\MRRC\MRRCManagement\obj\Debug\MRRCManagement.pdb
+C:\Users\n10132767\Desktop\Cab201PartASubmission\Cab201PartASubmission\MRRC\MRRCManagement\bin\Debug\MRRCManagement.dll
+C:\Users\n10132767\Desktop\Cab201PartASubmission\Cab201PartASubmission\MRRC\MRRCManagement\bin\Debug\MRRCManagement.pdb
+C:\Users\n10132767\Desktop\Cab201PartASubmission\Cab201PartASubmission\MRRC\MRRCManagement\obj\Debug\MRRCManagement.csprojAssemblyReference.cache
+C:\Users\n10132767\Desktop\Cab201PartASubmission\Cab201PartASubmission\MRRC\MRRCManagement\obj\Debug\MRRCManagement.dll
+C:\Users\n10132767\Desktop\Cab201PartASubmission\Cab201PartASubmission\MRRC\MRRCManagement\obj\Debug\MRRCManagement.pdb
+C:\Users\John Nguyen\Desktop\Cab201PartASubmission\MRRC\MRRCManagement\bin\Debug\MRRCManagement.dll
+C:\Users\John Nguyen\Desktop\Cab201PartASubmission\MRRC\MRRCManagement\bin\Debug\MRRCManagement.pdb
+C:\Users\John Nguyen\Desktop\Cab201PartASubmission\MRRC\MRRCManagement\obj\Debug\MRRCManagement.csprojAssemblyReference.cache
+C:\Users\John Nguyen\Desktop\Cab201PartASubmission\MRRC\MRRCManagement\obj\Debug\MRRCManagement.dll
+C:\Users\John Nguyen\Desktop\Cab201PartASubmission\MRRC\MRRCManagement\obj\Debug\MRRCManagement.pdb

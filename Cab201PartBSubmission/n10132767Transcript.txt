@@ -1,0 +1,767 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20200605180120
+Username: QUTAD\n10132767
+RunAs User: QUTAD\n10132767
+Configuration Name: 
+Machine: VDI-VL04-005 (Microsoft Windows NT 10.0.18363.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 7860
+PSVersion: 5.1.18362.752
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.18362.752
+BuildVersion: 10.0.18362.752
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is n10132767Transcript.txt
+PS C:\Users\n10132767\Desktop\Cab201PartBSubmission\MRRC\MRRC\bin\Debug> ./MRRC
+Error: Insufficient command Line arguments
+PS C:\Users\n10132767\Desktop\Cab201PartBSubmission\MRRC\MRRC\bin\Debug> ./MRRC "../../../Data/customers.csv" "../../../Data/fleet.csv" "../../../Data/rentals.csv"
+### Mates-Rates Rent-a-Car Operation Menu ###
+
+You may press the ESC key at any menu to exit. Press the BACKSPACE key to return
+to the previous menu. Press the Q key to return to the parent menu.
+Press the H key to return home to the main menu.
+
+Please enter a character from the options below:
+
+a) Customer Management
+b) Fleet Management
+c) Rental Managementa
+
+
+### Customer Management Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Customers
+b) New Customer
+c) Modify Customer
+d) Delete Customera
+
+
+### Table and Border Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Customer Table with ExtendedASCII border
+b) Display Customer Table with ASCII border
+c) Display Customer Table with Clear border
+
+a
+┌────┬───────┬───────────┬─────────────┬────────┬────────────┐
+│ ID │ Title │ FirstName │ LastName    │ Gender │ DOB        │
+├────┼───────┼───────────┼─────────────┼────────┼────────────┤
+│ 0  │ Ms    │ Elizabeth │ Franklin    │ Female │ 26/09/1995 │
+│ 1  │ Miss  │ Finley    │ Sartini     │ Male   │ 25/04/1965 │
+│ 2  │ Mr    │ Miron     │ Descoteaux  │ Male   │ 4/06/1983  │
+│ 3  │ Mx    │ Tekla     │ Muhammad    │ Other  │ 17/12/1989 │
+│ 4  │ Mrs   │ Valentina │ Waters      │ Female │ 27/04/1979 │
+│ 5  │ Mr    │ Azarel    │ Kristiansen │ Male   │ 1/06/1976  │
+│ 6  │ Lord  │ Herman    │ Dirksen     │ Male   │ 22/05/1959 │
+│ 7  │ Mrs   │ Emel      │ Gabor       │ Female │ 31/03/1976 │
+│ 8  │ Lady  │ Kalpana   │ Rothenberg  │ Female │ 6/02/1966  │
+│ 9  │ Dr    │ Amos      │ Allaway     │ Male   │ 10/09/1957 │
+└────┴───────┴───────────┴─────────────┴────────┴────────────┘
+
+q
+
+
+### Customer Management Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Customers
+b) New Customer
+c) Modify Customer
+d) Delete Customerd
+
+
+### Delete Customer Submenu ###
+
+Please enter the customer ID of the customer to be deleted: 0
+
+Deletion Unsuccessful. Customer '0' is currently renting a vehicle.
+
+
+
+### Delete Customer Submenu ###
+
+Please enter the customer ID of the customer to be deleted: 3
+
+Deletion Unsuccessful. Customer '3' is currently renting a vehicle.
+
+
+
+### Delete Customer Submenu ###
+
+Please enter the customer ID of the customer to be deleted: 9
+
+Successfully deleted the Customer with an ID of '9'
+h
+
+
+### Mates-Rates Rent-a-Car Operation Menu ###
+
+You may press the ESC key at any menu to exit. Press the BACKSPACE key to return
+to the previous menu. Press the Q key to return to the parent menu.
+Press the H key to return home to the main menu.
+
+Please enter a character from the options below:
+
+a) Customer Management
+b) Fleet Management
+c) Rental Managementc
+
+
+### Rental Management Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Rentals
+b) Search Vehicles
+c) Rent Vehicle
+d) Return Vehiclea
+
+
+### Table and Border Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Rentals Table with ExtendedASCII border
+b) Display Rentals Table with ASCII border
+c) Display Rentals Table with Clear border
+
+a
+┌──────────────┬────────────┬───────────┐
+│ Registration │ CustomerID │ DailyRate │
+├──────────────┼────────────┼───────────┤
+│ 602VVZ       │ 0          │ $37.90    │
+│ 677UIA       │ 6          │ $43.30    │
+│ 471XBI       │ 2          │ $38.00    │
+│ 851VOJ       │ 3          │ $37.10    │
+└──────────────┴────────────┴───────────┘
+
+q
+
+
+### Rental Management Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Rentals
+b) Search Vehicles
+c) Rent Vehicle
+d) Return Vehiclec
+
+
+### Rent Vehicle Submenu ###
+
+
+Please enter the customer ID of the customer to rent: 0
+
+Could not rent customer id '0', customer is currently renting a vehicle.
+
+Please enter the customer ID of the customer to rent: 6
+
+Could not rent customer id '6', customer is currently renting a vehicle.
+
+Please enter the customer ID of the customer to rent: 10
+
+Could not rent customer id '10', customer id does not exist in the customer list.
+
+Please enter the customer ID of the customer to rent: 9
+
+Could not rent customer id '9', customer id does not exist in the customer list.
+
+Please enter the customer ID of the customer to rent: 8
+Please enter the Registration of the vehicle to be rented*: 521AAA
+Please enter rental time in days: 3
+
+Successfully added customer '8' renting '521AAA' for '3' days with a total cost of $150.00
+q
+
+
+### Rental Management Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Rentals
+b) Search Vehicles
+c) Rent Vehicle
+d) Return Vehicled
+
+
+### Return Vehicle Submenu ###
+
+Please enter the Registration of the vehicle to be returned*: 169FBE
+
+Could not return vehicle registration '169FBE' as it doesn't exist in the rental list.
+
+Please enter the Registration of the vehicle to be returned*: 521AAA
+
+Successfully returned the Vehicle with the registration of '521AAA' belonging to customer '8'
+q
+
+
+### Rental Management Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Rentals
+b) Search Vehicles
+c) Rent Vehicle
+d) Return Vehiclea
+
+
+### Table and Border Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Rentals Table with ExtendedASCII border
+b) Display Rentals Table with ASCII border
+c) Display Rentals Table with Clear border
+
+a
+┌──────────────┬────────────┬───────────┐
+│ Registration │ CustomerID │ DailyRate │
+├──────────────┼────────────┼───────────┤
+│ 602VVZ       │ 0          │ $37.90    │
+│ 677UIA       │ 6          │ $43.30    │
+│ 471XBI       │ 2          │ $38.00    │
+│ 851VOJ       │ 3          │ $37.10    │
+└──────────────┴────────────┴───────────┘
+
+q
+
+
+### Rental Management Submenu ###
+
+Please enter a character from the options below:
+
+a) Display Rentals
+b) Search Vehicles
+c) Rent Vehicle
+d) Return Vehicleb
+
+
+### Search Vehicle Submenu ###
+
+
+Enter your search query, or just hit Enter to quit:
+
+-------------------------------------------- Showing all available vehicles --------------------------------------------
+
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| Rego   | Grade      | Make       | Model        | Year | Seats    | Transmission | Fuel   | GPS | SunRoof | Colour |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| 169FBE | Economy    | Pontiac    | Fiero 2M4    | 1985 | 2 Seater | Manual       | Petrol |     |         | Black  |
+| 993QAN | Commercial | Mitsubishi | 3000 GT VR-4 | 1991 | 2 Seater | Manual       | Petrol |     |         | Red    |
+| 509XRK | Commercial | Dodge      | Dakota       | 2002 | 4 Seater | Manual       | Diesel | GPS |         | Blue   |
+| 101XDD | Commercial | Audi       | A4           | 1997 | 5 Seater | Manual       | Petrol |     |         | Blue   |
+| 519YUY | Family     | Dodge      | Durango      | 2006 | 7 Seater | Automatic    | Diesel | GPS | sunroof | Blue   |
+| 513XPT | Economy    | Toyota     | Prius        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 513ABC | Economy    | Toyota     | Camry        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 521AAA | Economy    | Toyota     | Prius        | 2010 | 4 Seater | Automatic    | Petrol |     |         | Black  |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+
+### Search Vehicle Submenu ###
+
+
+Enter your search query, or just hit Enter to quit:  red
+
+--------------------------------------------- Searching available vehicles ---------------------------------------------
+
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| Rego   | Grade      | Make       | Model        | Year | Seats    | Transmission | Fuel   | GPS | SunRoof | Colour |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| 169FBE | Economy    | Pontiac    | Fiero 2M4    | 1985 | 2 Seater | Manual       | Petrol |     |         | Black  |
+| 993QAN | Commercial | Mitsubishi | 3000 GT VR-4 | 1991 | 2 Seater | Manual       | Petrol |     |         | Red    |
+| 509XRK | Commercial | Dodge      | Dakota       | 2002 | 4 Seater | Manual       | Diesel | GPS |         | Blue   |
+| 101XDD | Commercial | Audi       | A4           | 1997 | 5 Seater | Manual       | Petrol |     |         | Blue   |
+| 519YUY | Family     | Dodge      | Durango      | 2006 | 7 Seater | Automatic    | Diesel | GPS | sunroof | Blue   |
+| 513XPT | Economy    | Toyota     | Prius        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 513ABC | Economy    | Toyota     | Camry        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 521AAA | Economy    | Toyota     | Prius        | 2010 | 4 Seater | Automatic    | Petrol |     |         | Black  |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+
+
+Infix expression:    RED
+Postfix expression:  RED
+
+
+-------------------------------------------------- Query Search Output -------------------------------------------------
+
+┌────────┬────────────┬────────────┬──────────────┬──────┬──────────┬──────────────┬────────┬─────┬─────────┬────────┐
+│ Rego   │ Grade      │ Make       │ Model        │ Year │ Seats    │ Transmission │ Fuel   │ GPS │ SunRoof │ Colour │
+├────────┼────────────┼────────────┼──────────────┼──────┼──────────┼──────────────┼────────┼─────┼─────────┼────────┤
+│ 993QAN │ Commercial │ Mitsubishi │ 3000 GT VR-4 │ 1991 │ 2 Seater │ Manual       │ Petrol │     │         │ Red    │
+└────────┴────────────┴────────────┴──────────────┴──────┴──────────┴──────────────┴────────┴─────┴─────────┴────────┘
+
+### Search Vehicle Submenu ###
+
+
+Enter your search query, or just hit Enter to quit:  family
+
+--------------------------------------------- Searching available vehicles ---------------------------------------------
+
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| Rego   | Grade      | Make       | Model        | Year | Seats    | Transmission | Fuel   | GPS | SunRoof | Colour |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| 169FBE | Economy    | Pontiac    | Fiero 2M4    | 1985 | 2 Seater | Manual       | Petrol |     |         | Black  |
+| 993QAN | Commercial | Mitsubishi | 3000 GT VR-4 | 1991 | 2 Seater | Manual       | Petrol |     |         | Red    |
+| 509XRK | Commercial | Dodge      | Dakota       | 2002 | 4 Seater | Manual       | Diesel | GPS |         | Blue   |
+| 101XDD | Commercial | Audi       | A4           | 1997 | 5 Seater | Manual       | Petrol |     |         | Blue   |
+| 519YUY | Family     | Dodge      | Durango      | 2006 | 7 Seater | Automatic    | Diesel | GPS | sunroof | Blue   |
+| 513XPT | Economy    | Toyota     | Prius        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 513ABC | Economy    | Toyota     | Camry        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 521AAA | Economy    | Toyota     | Prius        | 2010 | 4 Seater | Automatic    | Petrol |     |         | Black  |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+
+
+Infix expression:    FAMILY
+Postfix expression:  FAMILY
+
+
+-------------------------------------------------- Query Search Output -------------------------------------------------
+
+┌────────┬────────┬───────┬─────────┬──────┬──────────┬──────────────┬────────┬─────┬─────────┬────────┐
+│ Rego   │ Grade  │ Make  │ Model   │ Year │ Seats    │ Transmission │ Fuel   │ GPS │ SunRoof │ Colour │
+├────────┼────────┼───────┼─────────┼──────┼──────────┼──────────────┼────────┼─────┼─────────┼────────┤
+│ 519YUY │ Family │ Dodge │ Durango │ 2006 │ 7 Seater │ Automatic    │ Diesel │ GPS │ sunroof │ Blue   │
+└────────┴────────┴───────┴─────────┴──────┴──────────┴──────────────┴────────┴─────┴─────────┴────────┘
+
+### Search Vehicle Submenu ###
+
+
+Enter your search query, or just hit Enter to quit:  8-seater
+
+--------------------------------------------- Searching available vehicles ---------------------------------------------
+
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| Rego   | Grade      | Make       | Model        | Year | Seats    | Transmission | Fuel   | GPS | SunRoof | Colour |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| 169FBE | Economy    | Pontiac    | Fiero 2M4    | 1985 | 2 Seater | Manual       | Petrol |     |         | Black  |
+| 993QAN | Commercial | Mitsubishi | 3000 GT VR-4 | 1991 | 2 Seater | Manual       | Petrol |     |         | Red    |
+| 509XRK | Commercial | Dodge      | Dakota       | 2002 | 4 Seater | Manual       | Diesel | GPS |         | Blue   |
+| 101XDD | Commercial | Audi       | A4           | 1997 | 5 Seater | Manual       | Petrol |     |         | Blue   |
+| 519YUY | Family     | Dodge      | Durango      | 2006 | 7 Seater | Automatic    | Diesel | GPS | sunroof | Blue   |
+| 513XPT | Economy    | Toyota     | Prius        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 513ABC | Economy    | Toyota     | Camry        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 521AAA | Economy    | Toyota     | Prius        | 2010 | 4 Seater | Automatic    | Petrol |     |         | Black  |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+
+
+Infix expression:    8-SEATER
+Postfix expression:  8-SEATER
+
+
+No match found
+
+Press H go to the main menu home, Q to parent menu, Esc to escape, Backspace to go back
+
+
+
+### Search Vehicle Submenu ###
+
+
+Enter your search query, or just hit Enter to quit:  7-seater
+
+--------------------------------------------- Searching available vehicles ---------------------------------------------
+
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| Rego   | Grade      | Make       | Model        | Year | Seats    | Transmission | Fuel   | GPS | SunRoof | Colour |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| 169FBE | Economy    | Pontiac    | Fiero 2M4    | 1985 | 2 Seater | Manual       | Petrol |     |         | Black  |
+| 993QAN | Commercial | Mitsubishi | 3000 GT VR-4 | 1991 | 2 Seater | Manual       | Petrol |     |         | Red    |
+| 509XRK | Commercial | Dodge      | Dakota       | 2002 | 4 Seater | Manual       | Diesel | GPS |         | Blue   |
+| 101XDD | Commercial | Audi       | A4           | 1997 | 5 Seater | Manual       | Petrol |     |         | Blue   |
+| 519YUY | Family     | Dodge      | Durango      | 2006 | 7 Seater | Automatic    | Diesel | GPS | sunroof | Blue   |
+| 513XPT | Economy    | Toyota     | Prius        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 513ABC | Economy    | Toyota     | Camry        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 521AAA | Economy    | Toyota     | Prius        | 2010 | 4 Seater | Automatic    | Petrol |     |         | Black  |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+
+
+Infix expression:    7-SEATER
+Postfix expression:  7-SEATER
+
+
+-------------------------------------------------- Query Search Output -------------------------------------------------
+
+┌────────┬────────┬───────┬─────────┬──────┬──────────┬──────────────┬────────┬─────┬─────────┬────────┐
+│ Rego   │ Grade  │ Make  │ Model   │ Year │ Seats    │ Transmission │ Fuel   │ GPS │ SunRoof │ Colour │
+├────────┼────────┼───────┼─────────┼──────┼──────────┼──────────────┼────────┼─────┼─────────┼────────┤
+│ 519YUY │ Family │ Dodge │ Durango │ 2006 │ 7 Seater │ Automatic    │ Diesel │ GPS │ sunroof │ Blue   │
+└────────┴────────┴───────┴─────────┴──────┴──────────┴──────────────┴────────┴─────┴─────────┴────────┘
+
+### Search Vehicle Submenu ###
+
+
+Enter your search query, or just hit Enter to quit:  family or luxury
+
+--------------------------------------------- Searching available vehicles ---------------------------------------------
+
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| Rego   | Grade      | Make       | Model        | Year | Seats    | Transmission | Fuel   | GPS | SunRoof | Colour |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| 169FBE | Economy    | Pontiac    | Fiero 2M4    | 1985 | 2 Seater | Manual       | Petrol |     |         | Black  |
+| 993QAN | Commercial | Mitsubishi | 3000 GT VR-4 | 1991 | 2 Seater | Manual       | Petrol |     |         | Red    |
+| 509XRK | Commercial | Dodge      | Dakota       | 2002 | 4 Seater | Manual       | Diesel | GPS |         | Blue   |
+| 101XDD | Commercial | Audi       | A4           | 1997 | 5 Seater | Manual       | Petrol |     |         | Blue   |
+| 519YUY | Family     | Dodge      | Durango      | 2006 | 7 Seater | Automatic    | Diesel | GPS | sunroof | Blue   |
+| 513XPT | Economy    | Toyota     | Prius        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 513ABC | Economy    | Toyota     | Camry        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 521AAA | Economy    | Toyota     | Prius        | 2010 | 4 Seater | Automatic    | Petrol |     |         | Black  |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+
+
+Infix expression:    FAMILY OR LUXURY
+Postfix expression:  FAMILY LUXURY OR
+
+
+-------------------------------------------------- Query Search Output -------------------------------------------------
+
+┌────────┬────────┬───────┬─────────┬──────┬──────────┬──────────────┬────────┬─────┬─────────┬────────┐
+│ Rego   │ Grade  │ Make  │ Model   │ Year │ Seats    │ Transmission │ Fuel   │ GPS │ SunRoof │ Colour │
+├────────┼────────┼───────┼─────────┼──────┼──────────┼──────────────┼────────┼─────┼─────────┼────────┤
+│ 519YUY │ Family │ Dodge │ Durango │ 2006 │ 7 Seater │ Automatic    │ Diesel │ GPS │ sunroof │ Blue   │
+└────────┴────────┴───────┴─────────┴──────┴──────────┴──────────────┴────────┴─────┴─────────┴────────┘
+
+### Search Vehicle Submenu ###
+
+
+Enter your search query, or just hit Enter to quit:  red or blue
+
+--------------------------------------------- Searching available vehicles ---------------------------------------------
+
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| Rego   | Grade      | Make       | Model        | Year | Seats    | Transmission | Fuel   | GPS | SunRoof | Colour |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| 169FBE | Economy    | Pontiac    | Fiero 2M4    | 1985 | 2 Seater | Manual       | Petrol |     |         | Black  |
+| 993QAN | Commercial | Mitsubishi | 3000 GT VR-4 | 1991 | 2 Seater | Manual       | Petrol |     |         | Red    |
+| 509XRK | Commercial | Dodge      | Dakota       | 2002 | 4 Seater | Manual       | Diesel | GPS |         | Blue   |
+| 101XDD | Commercial | Audi       | A4           | 1997 | 5 Seater | Manual       | Petrol |     |         | Blue   |
+| 519YUY | Family     | Dodge      | Durango      | 2006 | 7 Seater | Automatic    | Diesel | GPS | sunroof | Blue   |
+| 513XPT | Economy    | Toyota     | Prius        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 513ABC | Economy    | Toyota     | Camry        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 521AAA | Economy    | Toyota     | Prius        | 2010 | 4 Seater | Automatic    | Petrol |     |         | Black  |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+
+
+Infix expression:    RED OR BLUE
+Postfix expression:  RED BLUE OR
+
+
+-------------------------------------------------- Query Search Output -------------------------------------------------
+
+┌────────┬────────────┬────────────┬──────────────┬──────┬──────────┬──────────────┬────────┬─────┬─────────┬────────┐
+│ Rego   │ Grade      │ Make       │ Model        │ Year │ Seats    │ Transmission │ Fuel   │ GPS │ SunRoof │ Colour │
+├────────┼────────────┼────────────┼──────────────┼──────┼──────────┼──────────────┼────────┼─────┼─────────┼────────┤
+│ 509XRK │ Commercial │ Dodge      │ Dakota       │ 2002 │ 4 Seater │ Manual       │ Diesel │ GPS │         │ Blue   │
+│ 101XDD │ Commercial │ Audi       │ A4           │ 1997 │ 5 Seater │ Manual       │ Petrol │     │         │ Blue   │
+│ 519YUY │ Family     │ Dodge      │ Durango      │ 2006 │ 7 Seater │ Automatic    │ Diesel │ GPS │ sunroof │ Blue   │
+│ 993QAN │ Commercial │ Mitsubishi │ 3000 GT VR-4 │ 1991 │ 2 Seater │ Manual       │ Petrol │     │         │ Red    │
+└────────┴────────────┴────────────┴──────────────┴──────┴──────────┴──────────────┴────────┴─────┴─────────┴────────┘
+
+### Search Vehicle Submenu ###
+
+
+Enter your search query, or just hit Enter to quit:  gps or family
+
+--------------------------------------------- Searching available vehicles ---------------------------------------------
+
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| Rego   | Grade      | Make       | Model        | Year | Seats    | Transmission | Fuel   | GPS | SunRoof | Colour |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| 169FBE | Economy    | Pontiac    | Fiero 2M4    | 1985 | 2 Seater | Manual       | Petrol |     |         | Black  |
+| 993QAN | Commercial | Mitsubishi | 3000 GT VR-4 | 1991 | 2 Seater | Manual       | Petrol |     |         | Red    |
+| 509XRK | Commercial | Dodge      | Dakota       | 2002 | 4 Seater | Manual       | Diesel | GPS |         | Blue   |
+| 101XDD | Commercial | Audi       | A4           | 1997 | 5 Seater | Manual       | Petrol |     |         | Blue   |
+| 519YUY | Family     | Dodge      | Durango      | 2006 | 7 Seater | Automatic    | Diesel | GPS | sunroof | Blue   |
+| 513XPT | Economy    | Toyota     | Prius        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 513ABC | Economy    | Toyota     | Camry        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 521AAA | Economy    | Toyota     | Prius        | 2010 | 4 Seater | Automatic    | Petrol |     |         | Black  |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+
+
+Infix expression:    GPS OR FAMILY
+Postfix expression:  GPS FAMILY OR
+
+
+-------------------------------------------------- Query Search Output -------------------------------------------------
+
+┌────────┬────────────┬───────┬─────────┬──────┬──────────┬──────────────┬────────┬─────┬─────────┬────────┐
+│ Rego   │ Grade      │ Make  │ Model   │ Year │ Seats    │ Transmission │ Fuel   │ GPS │ SunRoof │ Colour │
+├────────┼────────────┼───────┼─────────┼──────┼──────────┼──────────────┼────────┼─────┼─────────┼────────┤
+│ 519YUY │ Family     │ Dodge │ Durango │ 2006 │ 7 Seater │ Automatic    │ Diesel │ GPS │ sunroof │ Blue   │
+│ 509XRK │ Commercial │ Dodge │ Dakota  │ 2002 │ 4 Seater │ Manual       │ Diesel │ GPS │         │ Blue   │
+└────────┴────────────┴───────┴─────────┴──────┴──────────┴──────────────┴────────┴─────┴─────────┴────────┘
+
+### Search Vehicle Submenu ###
+
+
+Enter your search query, or just hit Enter to quit:  family and luxury
+
+--------------------------------------------- Searching available vehicles ---------------------------------------------
+
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| Rego   | Grade      | Make       | Model        | Year | Seats    | Transmission | Fuel   | GPS | SunRoof | Colour |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| 169FBE | Economy    | Pontiac    | Fiero 2M4    | 1985 | 2 Seater | Manual       | Petrol |     |         | Black  |
+| 993QAN | Commercial | Mitsubishi | 3000 GT VR-4 | 1991 | 2 Seater | Manual       | Petrol |     |         | Red    |
+| 509XRK | Commercial | Dodge      | Dakota       | 2002 | 4 Seater | Manual       | Diesel | GPS |         | Blue   |
+| 101XDD | Commercial | Audi       | A4           | 1997 | 5 Seater | Manual       | Petrol |     |         | Blue   |
+| 519YUY | Family     | Dodge      | Durango      | 2006 | 7 Seater | Automatic    | Diesel | GPS | sunroof | Blue   |
+| 513XPT | Economy    | Toyota     | Prius        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 513ABC | Economy    | Toyota     | Camry        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 521AAA | Economy    | Toyota     | Prius        | 2010 | 4 Seater | Automatic    | Petrol |     |         | Black  |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+
+
+Infix expression:    FAMILY AND LUXURY
+Postfix expression:  FAMILY LUXURY AND
+
+
+No match found
+
+Press H go to the main menu home, Q to parent menu, Esc to escape, Backspace to go back
+r
+
+
+You pressed 'R', please enter a valid key
+
+### End of Mates-Rates Rent-a-Car Operation Menu ###
+
+Press H go to the main menu home, Q to parent menu, Esc to escape, Backspace to go back
+e
+
+
+You pressed 'E', please enter a valid key
+
+### End of Mates-Rates Rent-a-Car Operation Menu ###
+
+Press H go to the main menu home, Q to parent menu, Esc to escape, Backspace to go back
+
+
+
+### Search Vehicle Submenu ###
+
+
+Enter your search query, or just hit Enter to quit:  red and blue
+
+--------------------------------------------- Searching available vehicles ---------------------------------------------
+
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| Rego   | Grade      | Make       | Model        | Year | Seats    | Transmission | Fuel   | GPS | SunRoof | Colour |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| 169FBE | Economy    | Pontiac    | Fiero 2M4    | 1985 | 2 Seater | Manual       | Petrol |     |         | Black  |
+| 993QAN | Commercial | Mitsubishi | 3000 GT VR-4 | 1991 | 2 Seater | Manual       | Petrol |     |         | Red    |
+| 509XRK | Commercial | Dodge      | Dakota       | 2002 | 4 Seater | Manual       | Diesel | GPS |         | Blue   |
+| 101XDD | Commercial | Audi       | A4           | 1997 | 5 Seater | Manual       | Petrol |     |         | Blue   |
+| 519YUY | Family     | Dodge      | Durango      | 2006 | 7 Seater | Automatic    | Diesel | GPS | sunroof | Blue   |
+| 513XPT | Economy    | Toyota     | Prius        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 513ABC | Economy    | Toyota     | Camry        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 521AAA | Economy    | Toyota     | Prius        | 2010 | 4 Seater | Automatic    | Petrol |     |         | Black  |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+
+
+Infix expression:    RED AND BLUE
+Postfix expression:  RED BLUE AND
+
+
+No match found
+
+Press H go to the main menu home, Q to parent menu, Esc to escape, Backspace to go back
+G
+
+
+You pressed 'G', please enter a valid key
+
+### End of Mates-Rates Rent-a-Car Operation Menu ###
+
+Press H go to the main menu home, Q to parent menu, Esc to escape, Backspace to go back
+P
+
+
+You pressed 'P', please enter a valid key
+
+### End of Mates-Rates Rent-a-Car Operation Menu ###
+
+Press H go to the main menu home, Q to parent menu, Esc to escape, Backspace to go back
+
+
+
+### Search Vehicle Submenu ###
+
+
+Enter your search query, or just hit Enter to quit:  GPS AND family
+
+--------------------------------------------- Searching available vehicles ---------------------------------------------
+
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| Rego   | Grade      | Make       | Model        | Year | Seats    | Transmission | Fuel   | GPS | SunRoof | Colour |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| 169FBE | Economy    | Pontiac    | Fiero 2M4    | 1985 | 2 Seater | Manual       | Petrol |     |         | Black  |
+| 993QAN | Commercial | Mitsubishi | 3000 GT VR-4 | 1991 | 2 Seater | Manual       | Petrol |     |         | Red    |
+| 509XRK | Commercial | Dodge      | Dakota       | 2002 | 4 Seater | Manual       | Diesel | GPS |         | Blue   |
+| 101XDD | Commercial | Audi       | A4           | 1997 | 5 Seater | Manual       | Petrol |     |         | Blue   |
+| 519YUY | Family     | Dodge      | Durango      | 2006 | 7 Seater | Automatic    | Diesel | GPS | sunroof | Blue   |
+| 513XPT | Economy    | Toyota     | Prius        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 513ABC | Economy    | Toyota     | Camry        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 521AAA | Economy    | Toyota     | Prius        | 2010 | 4 Seater | Automatic    | Petrol |     |         | Black  |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+
+
+Infix expression:    GPS AND FAMILY
+Postfix expression:  GPS FAMILY AND
+
+
+-------------------------------------------------- Query Search Output -------------------------------------------------
+
+┌────────┬────────┬───────┬─────────┬──────┬──────────┬──────────────┬────────┬─────┬─────────┬────────┐
+│ Rego   │ Grade  │ Make  │ Model   │ Year │ Seats    │ Transmission │ Fuel   │ GPS │ SunRoof │ Colour │
+├────────┼────────┼───────┼─────────┼──────┼──────────┼──────────────┼────────┼─────┼─────────┼────────┤
+│ 519YUY │ Family │ Dodge │ Durango │ 2006 │ 7 Seater │ Automatic    │ Diesel │ GPS │ sunroof │ Blue   │
+└────────┴────────┴───────┴─────────┴──────┴──────────┴──────────────┴────────┴─────┴─────────┴────────┘
+
+### Search Vehicle Submenu ###
+
+
+Enter your search query, or just hit Enter to quit:  family or commercial or red
+
+--------------------------------------------- Searching available vehicles ---------------------------------------------
+
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| Rego   | Grade      | Make       | Model        | Year | Seats    | Transmission | Fuel   | GPS | SunRoof | Colour |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| 169FBE | Economy    | Pontiac    | Fiero 2M4    | 1985 | 2 Seater | Manual       | Petrol |     |         | Black  |
+| 993QAN | Commercial | Mitsubishi | 3000 GT VR-4 | 1991 | 2 Seater | Manual       | Petrol |     |         | Red    |
+| 509XRK | Commercial | Dodge      | Dakota       | 2002 | 4 Seater | Manual       | Diesel | GPS |         | Blue   |
+| 101XDD | Commercial | Audi       | A4           | 1997 | 5 Seater | Manual       | Petrol |     |         | Blue   |
+| 519YUY | Family     | Dodge      | Durango      | 2006 | 7 Seater | Automatic    | Diesel | GPS | sunroof | Blue   |
+| 513XPT | Economy    | Toyota     | Prius        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 513ABC | Economy    | Toyota     | Camry        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 521AAA | Economy    | Toyota     | Prius        | 2010 | 4 Seater | Automatic    | Petrol |     |         | Black  |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+
+
+Infix expression:    FAMILY OR COMMERCIAL OR RED
+Postfix expression:  FAMILY COMMERCIAL RED OR OR
+
+
+-------------------------------------------------- Query Search Output -------------------------------------------------
+
+┌────────┬────────────┬────────────┬──────────────┬──────┬──────────┬──────────────┬────────┬─────┬─────────┬────────┐
+│ Rego   │ Grade      │ Make       │ Model        │ Year │ Seats    │ Transmission │ Fuel   │ GPS │ SunRoof │ Colour │
+├────────┼────────────┼────────────┼──────────────┼──────┼──────────┼──────────────┼────────┼─────┼─────────┼────────┤
+│ 993QAN │ Commercial │ Mitsubishi │ 3000 GT VR-4 │ 1991 │ 2 Seater │ Manual       │ Petrol │     │         │ Red    │
+│ 509XRK │ Commercial │ Dodge      │ Dakota       │ 2002 │ 4 Seater │ Manual       │ Diesel │ GPS │         │ Blue   │
+│ 101XDD │ Commercial │ Audi       │ A4           │ 1997 │ 5 Seater │ Manual       │ Petrol │     │         │ Blue   │
+│ 519YUY │ Family     │ Dodge      │ Durango      │ 2006 │ 7 Seater │ Automatic    │ Diesel │ GPS │ sunroof │ Blue   │
+└────────┴────────────┴────────────┴──────────────┴──────┴──────────┴──────────────┴────────┴─────┴─────────┴────────┘
+
+### Search Vehicle Submenu ###
+
+
+Enter your search query, or just hit Enter to quit:  4-seater and economy or gps
+
+--------------------------------------------- Searching available vehicles ---------------------------------------------
+
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| Rego   | Grade      | Make       | Model        | Year | Seats    | Transmission | Fuel   | GPS | SunRoof | Colour |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| 169FBE | Economy    | Pontiac    | Fiero 2M4    | 1985 | 2 Seater | Manual       | Petrol |     |         | Black  |
+| 993QAN | Commercial | Mitsubishi | 3000 GT VR-4 | 1991 | 2 Seater | Manual       | Petrol |     |         | Red    |
+| 509XRK | Commercial | Dodge      | Dakota       | 2002 | 4 Seater | Manual       | Diesel | GPS |         | Blue   |
+| 101XDD | Commercial | Audi       | A4           | 1997 | 5 Seater | Manual       | Petrol |     |         | Blue   |
+| 519YUY | Family     | Dodge      | Durango      | 2006 | 7 Seater | Automatic    | Diesel | GPS | sunroof | Blue   |
+| 513XPT | Economy    | Toyota     | Prius        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 513ABC | Economy    | Toyota     | Camry        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 521AAA | Economy    | Toyota     | Prius        | 2010 | 4 Seater | Automatic    | Petrol |     |         | Black  |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+
+
+Infix expression:    4-SEATER AND ECONOMY OR GPS
+Postfix expression:  4-SEATER ECONOMY AND GPS OR
+
+
+-------------------------------------------------- Query Search Output -------------------------------------------------
+
+┌────────┬────────────┬────────┬─────────┬──────┬──────────┬──────────────┬────────┬─────┬─────────┬────────┐
+│ Rego   │ Grade      │ Make   │ Model   │ Year │ Seats    │ Transmission │ Fuel   │ GPS │ SunRoof │ Colour │
+├────────┼────────────┼────────┼─────────┼──────┼──────────┼──────────────┼────────┼─────┼─────────┼────────┤
+│ 509XRK │ Commercial │ Dodge  │ Dakota  │ 2002 │ 4 Seater │ Manual       │ Diesel │ GPS │         │ Blue   │
+│ 519YUY │ Family     │ Dodge  │ Durango │ 2006 │ 7 Seater │ Automatic    │ Diesel │ GPS │ sunroof │ Blue   │
+│ 513XPT │ Economy    │ Toyota │ Prius   │ 2012 │ 4 Seater │ Automatic    │ Petrol │     │         │ Black  │
+│ 513ABC │ Economy    │ Toyota │ Camry   │ 2012 │ 4 Seater │ Automatic    │ Petrol │     │         │ Black  │
+│ 521AAA │ Economy    │ Toyota │ Prius   │ 2010 │ 4 Seater │ Automatic    │ Petrol │     │         │ Black  │
+└────────┴────────────┴────────┴─────────┴──────┴──────────┴──────────────┴────────┴─────┴─────────┴────────┘
+
+### Search Vehicle Submenu ###
+
+
+Enter your search query, or just hit Enter to quit:  (red or blue or black AND GPS)
+
+--------------------------------------------- Searching available vehicles ---------------------------------------------
+
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| Rego   | Grade      | Make       | Model        | Year | Seats    | Transmission | Fuel   | GPS | SunRoof | Colour |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+| 169FBE | Economy    | Pontiac    | Fiero 2M4    | 1985 | 2 Seater | Manual       | Petrol |     |         | Black  |
+| 993QAN | Commercial | Mitsubishi | 3000 GT VR-4 | 1991 | 2 Seater | Manual       | Petrol |     |         | Red    |
+| 509XRK | Commercial | Dodge      | Dakota       | 2002 | 4 Seater | Manual       | Diesel | GPS |         | Blue   |
+| 101XDD | Commercial | Audi       | A4           | 1997 | 5 Seater | Manual       | Petrol |     |         | Blue   |
+| 519YUY | Family     | Dodge      | Durango      | 2006 | 7 Seater | Automatic    | Diesel | GPS | sunroof | Blue   |
+| 513XPT | Economy    | Toyota     | Prius        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 513ABC | Economy    | Toyota     | Camry        | 2012 | 4 Seater | Automatic    | Petrol |     |         | Black  |
+| 521AAA | Economy    | Toyota     | Prius        | 2010 | 4 Seater | Automatic    | Petrol |     |         | Black  |
++--------+------------+------------+--------------+------+----------+--------------+--------+-----+---------+--------+
+
+
+Infix expression:    ( RED OR BLUE OR BLACK AND GPS )
+Postfix expression:  RED BLUE BLACK GPS AND OR OR
+
+
+-------------------------------------------------- Query Search Output -------------------------------------------------
+
+┌────────┬────────────┬────────────┬──────────────┬──────┬──────────┬──────────────┬────────┬─────┬─────────┬────────┐
+│ Rego   │ Grade      │ Make       │ Model        │ Year │ Seats    │ Transmission │ Fuel   │ GPS │ SunRoof │ Colour │
+├────────┼────────────┼────────────┼──────────────┼──────┼──────────┼──────────────┼────────┼─────┼─────────┼────────┤
+│ 509XRK │ Commercial │ Dodge      │ Dakota       │ 2002 │ 4 Seater │ Manual       │ Diesel │ GPS │         │ Blue   │
+│ 101XDD │ Commercial │ Audi       │ A4           │ 1997 │ 5 Seater │ Manual       │ Petrol │     │         │ Blue   │
+│ 519YUY │ Family     │ Dodge      │ Durango      │ 2006 │ 7 Seater │ Automatic    │ Diesel │ GPS │ sunroof │ Blue   │
+│ 993QAN │ Commercial │ Mitsubishi │ 3000 GT VR-4 │ 1991 │ 2 Seater │ Manual       │ Petrol │     │         │ Red    │
+└────────┴────────────┴────────────┴──────────────┴──────┴──────────┴──────────────┴────────┴─────┴─────────┴────────┘
+
+### Search Vehicle Submenu ###
+
+
+Enter your search query, or just hit Enter to quit:  (red)) or blue
+
+Unbalanced parenthesis
+
+Press H go to the main menu home, Q to parent menu, Esc to escape, Backspace to go back
+
+
+
+### Search Vehicle Submenu ###
+
+
+Enter your search query, or just hit Enter to quit:
+
+
+
+### End of Mates-Rates Rent-a-Car Operation Menu ###
+
+Press H go to the main menu home, Q to parent menu, Esc to escape, Backspace to go back
+PS C:\Users\n10132767\Desktop\Cab201PartBSubmission\MRRC\MRRC\bin\Debug> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\Users\n10132767\Desktop\Cab201PartBSubmission\MRRC\MRRC\bin\Debug> stop-transcript
+**********************
+Windows PowerShell transcript end
+End time: 20200605180701
+**********************
